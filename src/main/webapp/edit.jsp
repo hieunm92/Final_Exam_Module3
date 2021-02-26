@@ -74,7 +74,7 @@
             </div>
               <div class="form-group">
                 <label>Category</label>
-                <input name="category_name" type="text" class="form-control" required>
+                <input value="${o.getCategory()}" name="category_name" type="text" class="form-control" required>
               </div>
 
           </div>

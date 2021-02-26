@@ -83,7 +83,7 @@ public class ProductService implements IProductService {
         Product product = null;
         Connection connection = getConnection();
         try {
-            PreparedStatement preparedStatement = connection.prepareStatement("select * from products where id=?");
+            PreparedStatement preparedStatement = connection.prepareStatement("select * from product where id=?");
             preparedStatement.setInt(1, id);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
